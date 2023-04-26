@@ -1,0 +1,35 @@
+"Games"
+{
+	"tf"
+	{
+		"Addresses"
+		{
+			"CTraceFilterSimple vtable"
+			{
+				"windows"
+				{
+					"signature" "CTraceFilterSimple vtable"
+					"read" "9"
+				}
+
+				"linux"
+				{
+					"signature" "CTraceFilterSimple vtable"
+					"offset" "8"
+				}
+			}
+		}
+
+		"Signatures"
+		{
+			"CTraceFilterSimple vtable"
+			{
+				"library"	"server"
+				"windows"	"\x8D\x85\x30\xFE\xFF\xFF\xC7\x45\xA4"
+				// 8D 85 30 FE FF FF C7 45 A4
+
+				"linux"		"@_ZTV18CTraceFilterSimple"
+			}
+		}
+	}
+}
